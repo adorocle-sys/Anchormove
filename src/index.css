@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container-mobile {
+  @apply max-w-md mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200;
+}
+
+.btn-primary {
+  @apply bg-black text-white px-5 py-3 rounded-2xl text-sm font-semibold hover:bg-gray-900 transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-yellow-400 text-black px-5 py-3 rounded-2xl text-sm font-semibold hover:bg-yellow-500 transition-colors;
+}
+
+.btn-outline {
+  @apply border border-gray-300 text-black px-5 py-3 rounded-2xl text-sm font-semibold hover:bg-gray-50 transition-colors;
+}
+
+.card {
+  @apply border border-gray-200 rounded-3xl p-5 shadow-sm bg-white;
+}
+
+.input-field {
+  @apply w-full border border-gray-300 rounded-2xl px-4 py-4 bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:border-black focus:ring-2 focus:ring-black focus:ring-opacity-20;
+}
